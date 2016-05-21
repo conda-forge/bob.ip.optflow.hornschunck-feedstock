@@ -10,7 +10,7 @@ source:
   url: https://pypi.python.org/packages/source/b/bob.ip.optflow.hornschunck/bob.ip.optflow.hornschunck-{{ version }}.zip
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
@@ -25,6 +25,7 @@ requirements:
     - bob.ip.color
     - scipy
     - pkg-config
+    - boost 1.60.*
 
   run:
     - python
@@ -35,6 +36,7 @@ requirements:
     - bob.io.base
     - bob.ip.color
     - scipy
+    - boost 1.60.*
 
 test:
   commands:
